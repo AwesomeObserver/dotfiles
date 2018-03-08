@@ -1,5 +1,5 @@
 # Var
-$chocoUpgrade = "choco upgrade chocolatey"
+$chocoUp = "choco upgrade chocolatey"
 $chocoV = "choco version"
 $yarnIn = "choco install yarn"
 $yarnUp = "choco upgrade yarn"
@@ -7,6 +7,8 @@ $nodeV = "node -v"
 $yarnV = "yarn -v"
 $goV = "go version"
 $glideV = "glide --version"
+$goPath = "echo $env:GOPATH"
+$goRoot = "echo $env:GOROOT"
 
 Write-Host "Welcome back!"
 Write-Host " "
@@ -15,12 +17,12 @@ Write-Host "Running script..."
 Write-Host " "
 
 # Insatall Choco
-# Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Choco post installation
 Write-Host "Upgrade Choco"
 Write-Host " "
-Invoke-Expression $chocoUpgrade
+Invoke-Expression $chocoUp
 Write-Host " "
 
 Write-Host "Choco version"
@@ -50,6 +52,11 @@ Write-Host " "
 
 Write-Host "Golang version"
 Invoke-Expression $goV
+Write-Host " "
+
+Write-Host "GOPATH & GOROOT"
+Invoke-Expression $goPath
+Invoke-Expression $goRoot
 Write-Host " "
 
 Write-Host "Glide version"
