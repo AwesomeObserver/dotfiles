@@ -1,6 +1,10 @@
 # Var
 $chocoUp = "choco upgrade chocolatey"
 $chocoV = "choco version"
+$gitIn = "choco install git.install"
+$gitUp = "choco upgrade git.install"
+$nodeIn = "choco install nodejs.install"
+$nodeUp = "choco upgrade nodejs.install"
 $yarnIn = "choco install yarn"
 $yarnUp = "choco upgrade yarn"
 $nodeV = "node -v"
@@ -10,55 +14,79 @@ $glideV = "glide --version"
 $goPath = "echo $env:GOPATH"
 $goRoot = "echo $env:GOROOT"
 
-Write-Host "Welcome back!"
+Write-Host "Welcome back!" -ForegroundColor Magenta -BackgroundColor Black
 Write-Host " "
 
-Write-Host "Running script..."
+Write-Host "Running script..." -ForegroundColor Magenta -BackgroundColor Black
 Write-Host " "
 
 # Insatall Choco
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Choco post installation
-Write-Host "Upgrade Choco"
+Write-Host "Upgrade Choco" -ForegroundColor Green -BackgroundColor Black
 Write-Host " "
 Invoke-Expression $chocoUp
 Write-Host " "
 
-Write-Host "Choco version"
+Write-Host "Choco version" -ForegroundColor Green -BackgroundColor Black
 Write-Host " "
 Invoke-Expression $chocoV
 Write-Host " "
 
+# Install Git
+Write-Host "Install Git..." -ForegroundColor Green -BackgroundColor Black
+Write-Host " "
+Invoke-Expression $gitIn
+Write-Host " "
+
+Write-Host "Upgrade Git..." -ForegroundColor Green -BackgroundColor Black
+Write-Host " "
+Invoke-Expression $gitUp
+Write-Host " "
+
+# Install NodeJS
+Write-Host "Install NodeJS..." -ForegroundColor Green -BackgroundColor Black
+Write-Host " "
+Invoke-Expression $nodeIn
+Write-Host " "
+
+Write-Host "Upgrade NodeJS..." -ForegroundColor Green -BackgroundColor Black
+Write-Host " "
+Invoke-Expression $nodeUp
+Write-Host " "
+
 # Install Yarn
-Write-Host "Install Yarn..."
+Write-Host "Install Yarn..." -ForegroundColor Green -BackgroundColor Black
 Write-Host " "
 Invoke-Expression $yarnIn
 Write-Host " "
 
-Write-Host "Upgrade Yarn..."
+Write-Host "Upgrade Yarn..." -ForegroundColor Green -BackgroundColor Black
 Write-Host " "
 Invoke-Expression $yarnUp
 Write-Host " "
 
-# Check something version
-Write-Host "Node version"
+# Check something versions
+Write-Host "Node version" -ForegroundColor Green -BackgroundColor Black
 Invoke-Expression $nodeV
 Write-Host " "
 
-Write-Host "Yarn version"
+Write-Host "Yarn version" -ForegroundColor Green -BackgroundColor Black
 Invoke-Expression $yarnV
 Write-Host " "
 
-Write-Host "Golang version"
+Write-Host "Golang version" -ForegroundColor Green -BackgroundColor Black
 Invoke-Expression $goV
 Write-Host " "
 
-Write-Host "GOPATH & GOROOT"
+Write-Host "GOPATH & GOROOT" -ForegroundColor Green -BackgroundColor Black
 Invoke-Expression $goPath
 Invoke-Expression $goRoot
 Write-Host " "
 
-Write-Host "Glide version"
+Write-Host "Glide version" -ForegroundColor Green -BackgroundColor Black
 Invoke-Expression $glideV
 Write-Host " "
+
+Write-Host "Done" -ForegroundColor Green -BackgroundColor Black
