@@ -7,6 +7,7 @@ $nodeIn = "choco install nodejs.install"
 $nodeUp = "choco upgrade nodejs.install"
 $yarnIn = "choco install yarn"
 $yarnUp = "choco upgrade yarn"
+$nodeDep = "npm install -g typescript parcel-bundler @vue/cli"
 $nodeV = "node -v"
 $yarnV = "yarn -v"
 $goV = "go version"
@@ -67,6 +68,11 @@ Write-Host " "
 Invoke-Expression $yarnUp
 Write-Host " "
 
+# Install NodeJS Dep
+Write-Host "Install NodeJS Dep..." -ForegroundColor Green -BackgroundColor Black
+Invoke-Expression $nodeDep
+Write-Host " "
+
 # Check something versions
 Write-Host "Node version" -ForegroundColor Green -BackgroundColor Black
 Invoke-Expression $nodeV
@@ -90,3 +96,9 @@ Invoke-Expression $glideV
 Write-Host " "
 
 Write-Host "Done" -ForegroundColor Green -BackgroundColor Black
+
+# Remove folder
+# Remove-Item -Path C:\newDir -Force -Recurse
+
+# # Добавить создание папки для GOPATH
+# New-Item -ItemType directory -Path C:\newDir
