@@ -1,4 +1,4 @@
-# Var
+# Vars
 $chocoUp = "choco upgrade chocolatey"
 $chocoV = "choco version"
 $gitIn = "choco install git.install"
@@ -7,16 +7,13 @@ $nodeIn = "choco install nodejs.install"
 $nodeUp = "choco upgrade nodejs.install"
 $yarnIn = "choco install yarn"
 $yarnUp = "choco upgrade yarn"
-$nodeDep = "npm install -g typescript parcel-bundler @vue/cli"
+$nodeDep = "npm install -g typescript parcel-bundler now @vue/cli @angular/cli"
 $nodeV = "node -v"
 $yarnV = "yarn -v"
 $goV = "go version"
 $glideV = "glide --version"
 $goPath = "echo $env:GOPATH"
 $goRoot = "echo $env:GOROOT"
-
-Write-Host "Welcome back!" -ForegroundColor Magenta -BackgroundColor Black
-Write-Host " "
 
 Write-Host "Running script..." -ForegroundColor Magenta -BackgroundColor Black
 Write-Host " "
@@ -96,9 +93,3 @@ Invoke-Expression $glideV
 Write-Host " "
 
 Write-Host "Done" -ForegroundColor Green -BackgroundColor Black
-
-# Remove folder
-# Remove-Item -Path C:\newDir -Force -Recurse
-
-# # Добавить создание папки для GOPATH
-# New-Item -ItemType directory -Path C:\newDir
