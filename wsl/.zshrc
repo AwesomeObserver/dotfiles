@@ -11,6 +11,8 @@
 # ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -99,3 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cls="clear"
+alias pla="sudo apt list --installed"
+alias pl$1="sudo dpkg -l | grep -i $1"
+alias ..="cd .."
