@@ -7,6 +7,8 @@ if [ -t 1 ]; then
 exec zsh
 fi
 
+export DOCKER_HOST=tcp://0.0.0.0:2375
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
