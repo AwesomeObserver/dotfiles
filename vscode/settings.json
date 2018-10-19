@@ -1,5 +1,39 @@
 {
-   "editor.fontSize": 15,
-   "editor.tabSize": 2,
-   "editor.fontFamily": "Operator Mono"
+  "editor.fontFamily": "Iosevka Regular",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "eq-material-theme-icons-ocean",
+  "prettier.tslintIntegration": true,
+  "prettier.requireConfig": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "/K",
+    "C:\\Program Files\\cmder\\vscode.bat"
+  ],
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": false
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "git.confirmSync": false,
+  "explorer.confirmDelete": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "material-icon-theme.folders.color": "#ff7043",
+  "material-icon-theme.folders.theme": "specific",
+  "breadcrumbs.enabled": true,
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.cursorBlinking": true
 }
