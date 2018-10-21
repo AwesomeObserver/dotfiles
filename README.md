@@ -1,4 +1,4 @@
-# My dotfiles for Windows & Linux
+# My dotfiles for Windows 10 & WSL & Linux & NixOS
 
 - Prepare to WSL
 ```sh
