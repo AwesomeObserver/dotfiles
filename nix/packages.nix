@@ -2,18 +2,24 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Tools
     curl
-    dropbox
     git
     htop
     nix-repl
     nix-zsh-completions
-    skype
-    spotify
     unrar
     wget
     xclip
     zip
     zsh
+
+    # Work
+    spotify
+    dropbox
+
+    # Social
+    skype
+    discord 
   ];
 }
