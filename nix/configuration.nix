@@ -4,6 +4,8 @@
   imports = [
     # Add hardware scan configuration.
     ./hardware-configuration.nix
+    # I3 WM
+    ./wm.nix
     # Add packages.
     ./packages.nix
     # Add users.
