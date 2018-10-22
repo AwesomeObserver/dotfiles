@@ -10,6 +10,7 @@
     ./users.nix
   ];
 
+  # Boot block
   boot.initrd.luks.devices = [
     {
       name = "root";

@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
-{
+{ 
+  # Packages
   environment.systemPackages = with pkgs; [
     # Tools
     curl
@@ -13,6 +14,7 @@
     xclip
     zip
     zsh
+    tmux
 
     # Work
     spotify
