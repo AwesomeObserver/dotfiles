@@ -1,0 +1,11 @@
+[user]
+	email = me@awesomeobserver.me
+	name = Eugene
+	username = AwesomeObserver
+	signingkey = F9D4D14713E71107
+[core]
+	editor = code
+[color]
+	ui = auto
+[commit]
+	gpgsign = true
