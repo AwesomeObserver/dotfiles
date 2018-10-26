@@ -80,8 +80,26 @@ allColors() {
   for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"
 }
 
+# Clear console
 alias cls="clear"
+# All inst pkg
 alias pla="sudo apt list --installed"
+# All instl pkg with grep
 alias pl$1="sudo dpkg -l | grep -i $1"
+# Cd ..
 alias ..="cd .."
+# Print all colors
 alias clr="allColors"
+# All docker containers list
+alias dps="docker ps"
+# All docker images list
+alias dil="docker images ls"
+# All GPG keys
+alias gpgl="gpg --list-keys"
+# Delete GPG public key
+alias gpgdk$1="gpg --delete-key "$1""
+# GPG fingerprint
+alias gpgfgp="gpg --fingerprint"
+alias gpg="gpgll --list-secret-keys --keyid-format LONG"
+alias gpgpk$1="gpg --armor --export $1"
+alias gitcl="git config --list"
