@@ -101,6 +101,7 @@ alias gpgl="gpg --list-keys"
 alias gpgdk$1="gpg --delete-key "$1""
 # GPG fingerprint
 alias gpgfgp="gpg --fingerprint"
+# Get gpg key long format
 alias gpg="gpgll --list-secret-keys --keyid-format LONG"
 alias gpgpk$1="gpg --armor --export $1"
 alias gitcl="git config --list"
