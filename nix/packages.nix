@@ -19,9 +19,14 @@
     # Work
     spotify
     dropbox
+    thunderbird
+    
+    # Misc
+    obs-studio
 
     # Social
     skype
-    discord 
+    discord
+    tdesktop
   ];
 }
