@@ -28,6 +28,7 @@
     # Social
     skype
     discord
+    slack
     tdesktop
   ];
 }
