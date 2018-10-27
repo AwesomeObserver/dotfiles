@@ -24,6 +24,8 @@
   time.timeZone = "Europe/Moscow";
 
   boot.loader.grub.device = "/dev/sda";
+  
+  virtualisation.docker.enable = true;
 
   networking.wireless.enable = true;
 }
