@@ -22,6 +22,8 @@
     thunderbird
     docker
     firefox-bin
+    firefox-nightly-bin
+    google-chrome
     
     # Misc
     obs-studio
