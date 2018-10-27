@@ -20,6 +20,7 @@
     spotify
     dropbox
     thunderbird
+    docker
     
     # Misc
     obs-studio
