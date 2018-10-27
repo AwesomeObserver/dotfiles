@@ -21,6 +21,7 @@
     dropbox
     thunderbird
     docker
+    firefox-bin
     
     # Misc
     obs-studio
