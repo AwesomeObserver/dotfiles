@@ -25,6 +25,8 @@
 
   boot.loader.grub.device = "/dev/sda";
   
+  nixpkgs.config.allowUnfree = true;
+  
   virtualisation.docker.enable = true;
 
   networking.wireless.enable = true;
