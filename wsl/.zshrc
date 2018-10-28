@@ -94,6 +94,7 @@ alias clr="allColors"
 alias dps="docker ps"
 # All docker images list
 alias dil="docker images ls"
+alias drf$1="docker rmi -f $1"
 # All GPG keys
 alias gpgl="gpg --list-keys"
 # Delete GPG public key
