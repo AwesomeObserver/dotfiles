@@ -1,0 +1,1 @@
+Get-ChildItem -Path /cmder -Recurse | Copy-Item -Destination C:\Program Files\cmder\config
