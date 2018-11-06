@@ -1,10 +1,6 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # Launch Zsh
 if [ -t 1 ]; then
-exec zsh
+  exec zsh
 fi
 
 export DOCKER_HOST=tcp://0.0.0.0:2375
