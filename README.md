@@ -1,4 +1,4 @@
-# My dotfiles for WSL & NixOS
+# My dotfiles for WSL
 
 - Prepare to WSL
 ```sh
